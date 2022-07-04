@@ -12,7 +12,8 @@ font-family: 'Urbanist', sans-serif; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0px;
+    gap: 30px;
 }
 
 .hotelWrapper {
@@ -127,13 +128,12 @@ font-family: 'Urbanist', sans-serif; */
 
 .slider {
     position: sticky;
-    top: 20px;
+    top: 0;
     left: 0;
-    width: 95vw;
-    height: 95vh;
-    background-color: rgba(0, 0, 0, 0.35);
+    width: 98.9vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
-    /* background-color: transparent; */
     z-index: 999;
     align-items: center;
 }
@@ -155,7 +155,7 @@ font-family: 'Urbanist', sans-serif; */
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 30px;
+    font-size: 35px;
     color: rgb(213, 213, 213);
     cursor: pointer;
 }

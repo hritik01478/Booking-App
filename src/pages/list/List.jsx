@@ -16,7 +16,6 @@ const List = () => {
     const [options, setOptions] = useState(location.state.options);
 
 
-
     return (
         <div>
             <Navbar />
@@ -27,7 +26,7 @@ const List = () => {
                         <h1 className="lsTitle">Search</h1>
                         <div className="lsItem">
                             <label >Destionation</label>
-                            <input type="text" placeholder={destination} />
+                            <input type="text" placeholder={destination} onChange={(e) => setDestination(e.target.value)} />
                         </div>
                         <div className="lsItem">
                             <label >Check in Date</label>
@@ -47,15 +46,15 @@ const List = () => {
                                 </div>
                                 <div className="lsOptionItem">
                                     <span className="lsOptionText">Adult</span>
-                                    <input type="number" className='lsOptionInput' placeholder={options.adult} min={1} />
+                                    <input type="number" className='lsOptionInput' placeholder={options.adult} min={1} onChange={(e) => setOptions(options.adult = e.target.value)} />
                                 </div>
                                 <div className="lsOptionItem">
                                     <span className="lsOptionText">Children</span>
-                                    <input type="number" className='lsOptionInput' placeholder={options.children} min={0} />
+                                    <input type="number" className='lsOptionInput' placeholder={options.children} min={0} onChange={(e) => setOptions(options.children = e.target.value)} />
                                 </div>
                                 <div className="lsOptionItem">
                                     <span className="lsOptionText">Room</span>
-                                    <input type="number" className='lsOptionInput' placeholder={options.room} min={1} />
+                                    <input type="number" className='lsOptionInput' placeholder={options.room} min={1} onChange={(e) => setOptions(options.room = e.target.value)} />
                                 </div>
                             </div>
                         </div>
